@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         filipSingle.setDigit(3,true)
         Thread {
             for (index in 0..9){
-                Thread.sleep(1000)
+                Thread.sleep(5000)
                 filipSingle.setDigit(index, true)
             }
         }.start()

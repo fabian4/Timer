@@ -5,110 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/tab0"
+    <com.fabian.timer.flip.FlipDigit
+        android:id="@+id/hours_1"
         android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:text="tab1"
-        android:textColor="@color/colorWhite"
-        android:textSize="20sp"
+        app:isFast="true"
+        app:tintColor="#000000"
+        android:layout_marginStart="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/tab1" />
-
-    <TextView
-        android:id="@+id/tab1"
+        app:layout_constraintRight_toLeftOf="@+id/hours_2"/>
+    <com.fabian.timer.flip.FlipDigit
+        android:id="@+id/hours_2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="tab2"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
+        app:isFast="true"
+        app:tintColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tab0"
-        app:layout_constraintRight_toLeftOf="@+id/tab2"
-        app:layout_constraintTop_toTopOf="@+id/tab0" />
-
+        app:layout_constraintLeft_toRightOf="@+id/hours_1"
+        app:layout_constraintRight_toLeftOf="@+id/colon"/>
     <TextView
-        android:id="@+id/tab2"
+        android:id="@+id/colon"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/colorAccent"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:text="tab3"
-        android:textColor="@color/colorWhite"
-        android:textSize="20sp"
+        app:layout_constraintWidth_percent="0.03"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tab1"
-        app:layout_constraintRight_toLeftOf="@id/tab3"
-        app:layout_constraintTop_toTopOf="@+id/tab0" />
-
-    <TextView
-        android:id="@+id/tab3"
+        app:layout_constraintLeft_toRightOf="@id/hours_2"
+        app:layout_constraintRight_toLeftOf="@+id/minutes_1"/>
+    <com.fabian.timer.flip.FlipDigit
+        android:id="@+id/minutes_1"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="tab4"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
+        app:isFast="true"
+        app:tintColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tab2"
-        app:layout_constraintRight_toLeftOf="@+id/tab4"
-        app:layout_constraintTop_toTopOf="@+id/tab0" />
-
-    <TextView
-        android:id="@+id/tab4"
+        app:layout_constraintLeft_toRightOf="@+id/colon"
+        app:layout_constraintRight_toLeftOf="@+id/minutes_2"/>
+    <com.fabian.timer.flip.FlipDigit
+        android:id="@+id/minutes_2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/colorHoloOrangeLight"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:text="tab5"
-        android:textColor="@color/colorWhite"
-        android:textSize="20sp"
+        app:isFast="true"
+        app:tintColor="#000000"
+        android:layout_marginRight="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tab3"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tab0" />
+        app:layout_constraintLeft_toRightOf="@+id/minutes_1"
+        app:layout_constraintRight_toRightOf="parent"/>
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-
-<!--        <com.fabian.timer.flip.FlipDigit-->
-<!--            android:id="@+id/filipSingle"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            app:isFast="true"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:tintColor="#000000" />-->
-        <!--        <TextView-->
-<!--            android:id="@+id/hours"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:gravity="center"-->
-<!--            android:typeface="sans"-->
-<!--            android:textSize="250sp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="6"/>-->
-
-<!--        <TextView-->
-<!--            android:layout_width="0dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="@string/colon"-->
-<!--            android:typeface="sans"-->
-<!--            android:textSize="200sp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"/>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/minutes"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:gravity="center"-->
-<!--            android:typeface="sans"-->
-<!--            android:textSize="250sp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="6"/>-->
-<!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
