@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val timer = findViewById<TextView>(R.id.timer)
-        timer.typeface = Typeface.createFromAsset(assets, "fonts/ds_digi.ttf")
-        timer.text = "23:22"
-        timer.textSize = 250f
+//        val timer = findViewById<TextView>(R.id.timer)
+//        timer.typeface = Typeface.createFromAsset(assets, "fonts/ds_digi.ttf")
+//        timer.text = "23:22"
+//        timer.textSize = 250f
     }
 }
