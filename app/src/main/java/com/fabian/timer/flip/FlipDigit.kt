@@ -27,7 +27,6 @@ class FlipDigit : RelativeLayout {
         val num = typedArray.indexCount
         try {
             isFast = typedArray.getBoolean(R.styleable.FlipDigit_isFast, false)
-
             // Set tint
             for (i in 0 until num) {
                 val attr = typedArray.getIndex(i)
@@ -48,10 +47,6 @@ class FlipDigit : RelativeLayout {
         val layoutInflater =
             context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         FlipItem = layoutInflater.inflate(R.layout.view_flipmeter_spinner, this)
-    }
-
-    fun getFlipItem(): View? {
-        return FlipItem
     }
 
     fun setDigit(animateTo: Int, withAnimation: Boolean) {

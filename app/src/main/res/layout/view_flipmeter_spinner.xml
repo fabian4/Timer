@@ -10,8 +10,7 @@
         android:id="@+id/image_flip_back_upper"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:src="@drawable/ic_upper_0"
-        />
+        android:src="@drawable/ic_upper_0"/>
 
     <ImageView
         android:id="@+id/image_flip_back_lower"
