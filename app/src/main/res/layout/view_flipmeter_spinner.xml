@@ -10,26 +10,26 @@
         android:id="@+id/image_flip_back_upper"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:src="@drawable/ic_upper_0"/>
+        android:background="@drawable/ic_upper_0"/>
 
     <ImageView
         android:id="@+id/image_flip_back_lower"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:layout_below="@+id/image_flip_back_upper"
-        android:src="@drawable/ic_lower_0" />
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_lower_0" />
 
     <ImageView
         android:id="@+id/image_flip_front_upper"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:src="@drawable/ic_upper_0" />
+        android:background="@drawable/ic_upper_0" />
 
     <ImageView
         android:id="@+id/image_flip_front_lower"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:layout_below="@+id/image_flip_front_upper"
-        android:src="@drawable/ic_lower_0" />
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_lower_0" />
 
 </RelativeLayout>

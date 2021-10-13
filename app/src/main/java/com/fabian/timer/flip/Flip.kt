@@ -21,7 +21,7 @@ class Flip(
 ) : Animation.AnimationListener {
 
     private var flip_backup: ImageView? = null
-    private var flipI_backlow: ImageView? = null
+    private var flip_backlow: ImageView? = null
     private var flip_frontup: ImageView? = null
     private var flip_frontlow: ImageView? = null
 
@@ -41,7 +41,7 @@ class Flip(
     init {
         if (flipColor != 0) this.flipColor = flipColor
         flip_backup = view.findViewById<View>(R.id.image_flip_back_upper) as ImageView
-        flipI_backlow = view.findViewById<View>(R.id.image_flip_back_lower) as ImageView
+        flip_backlow = view.findViewById<View>(R.id.image_flip_back_lower) as ImageView
         flip_frontup = view.findViewById<View>(R.id.image_flip_front_upper) as ImageView
         flip_frontlow = view.findViewById<View>(R.id.image_flip_front_lower) as ImageView
         setColor()
@@ -60,7 +60,7 @@ class Flip(
     private fun setColor() {
         if (flipColor != 0) {
             flip_backup!!.setColorFilter(flipColor, PorterDuff.Mode.SRC_IN)
-            flipI_backlow!!.setColorFilter(flipColor, PorterDuff.Mode.SRC_IN)
+            flip_backlow!!.setColorFilter(flipColor, PorterDuff.Mode.SRC_IN)
             flip_frontup!!.setColorFilter(flipColor, PorterDuff.Mode.SRC_IN)
             flip_frontlow!!.setColorFilter(flipColor, PorterDuff.Mode.SRC_IN)
         }
@@ -83,7 +83,7 @@ class Flip(
 
     private fun init() {
         flip_backup!!.tag = 0
-        flipI_backlow!!.tag = 0
+        flip_backlow!!.tag = 0
         flip_frontup!!.tag = 0
         flip_frontlow!!.tag = 0
         anim1 = AnimationUtils.loadAnimation(context, R.anim.flip_point_to_middle)
@@ -135,7 +135,7 @@ class Flip(
 
     private fun setDigitImageToAll(digit: Int) {
         setDigitImage(digit, true, flip_backup!!)
-        setDigitImage(digit, false, flipI_backlow!!)
+        setDigitImage(digit, false, flip_backlow!!)
         setDigitImage(digit, true, flip_frontup!!)
         setDigitImage(digit, false, flip_frontlow!!)
     }
@@ -165,7 +165,7 @@ class Flip(
         } else if (animation === anim2) {
             flip_frontup!!.visibility = View.VISIBLE
             setDigitImage(getDigitToShow(), true, flip_frontup!!)
-            setDigitImage(getDigitToShow(), false, flipI_backlow!!)
+            setDigitImage(getDigitToShow(), false, flip_backlow!!)
             incrementFromCode()
             animateDigit(false)
         }

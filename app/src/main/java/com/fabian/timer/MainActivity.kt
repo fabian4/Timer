@@ -59,6 +59,14 @@ class MainActivity : AppCompatActivity() {
             minutes1.setDigit(Integer.parseInt(minute[0].toString()), true)
             minutes2.setDigit(Integer.parseInt(minute[1].toString()), true)
         }
+
+//        for(index in 0..9){
+//            Thread.sleep(5000)
+//            hours1.setDigit(index, true)
+//            hours2.setDigit(index, true)
+//            minutes1.setDigit(index, true)
+//            minutes1.setDigit(index, true)
+//        }
     }
 
     inner class TimeChangerReceiver:BroadcastReceiver(){
