@@ -155,7 +155,8 @@ class Flip(
             8 -> resource = if (isUpper) R.drawable.ic_upper_8 else R.drawable.ic_lower_8
             9 -> resource = if (isUpper) R.drawable.ic_upper_9 else R.drawable.ic_lower_9
         }
-        image.setImageResource(resource)
+        image.setBackgroundResource(resource)
+//        image.setImageResource(resource)
     }
 
     override fun onAnimationEnd(animation: Animation) {
