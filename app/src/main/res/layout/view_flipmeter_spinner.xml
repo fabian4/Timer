@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="2dp"
-    android:background="@android:color/white">
+    android:padding="2dp">
 
     <ImageView
         android:id="@+id/image_flip_back_upper"
@@ -17,7 +16,6 @@
         android:id="@+id/image_flip_back_lower"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:scaleType="fitXY"
         android:layout_below="@+id/image_flip_back_upper"
         android:background="@drawable/ic_lower_0" />
 
@@ -32,7 +30,6 @@
         android:id="@+id/image_flip_front_lower"
         android:layout_width="300dp"
         android:layout_height="220dp"
-        android:scaleType="fitXY"
         android:layout_below="@+id/image_flip_front_upper"
         android:background="@drawable/ic_lower_0" />
 

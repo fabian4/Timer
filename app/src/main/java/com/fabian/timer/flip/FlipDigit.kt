@@ -60,17 +60,5 @@ class FlipDigit : RelativeLayout {
         flip = FlipItem?.let { Flip(context, id, it, null, isFast, color) }
     }
 
-    fun getCurrentDigit(): Int {
-        return mCurrentDigit
-    }
-
-    fun setFastFlip(isFastFlip: Boolean) {
-        flip!!.setFastFlip(isFastFlip)
-    }
-
-    fun setColor(color: Int) {
-        flip!!.setColor(color)
-    }
-
 
 }
