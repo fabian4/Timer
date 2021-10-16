@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#696969"
+    android:background="#000000"
     tools:context=".MainActivity">
 
     <TextView
@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:gravity="center"
             app:isFast="true"
-            app:tintColor="#000000" />
+            app:tintColor="@color/grey" />
 
         <com.fabian.timer.flip.FlipDigit
             android:id="@+id/hours_2"
@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:gravity="center"
             app:isFast="true"
-            app:tintColor="#000000" />
+            app:tintColor="@color/grey" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +66,7 @@
             android:gravity="center"
             android:layout_weight="1"
             app:isFast="true"
-            app:tintColor="#000000"/>
+            app:tintColor="@color/grey"/>
         <com.fabian.timer.flip.FlipDigit
             android:id="@+id/minutes_2"
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
             android:gravity="center"
             android:layout_weight="1"
             app:isFast="true"
-            app:tintColor="#000000"/>
+            app:tintColor="@color/grey"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

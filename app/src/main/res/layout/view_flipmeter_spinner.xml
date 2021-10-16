@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/black"
+    android:background="@android:color/transparent"
     android:padding="2dp">
 
     <View
@@ -16,6 +16,7 @@
         android:layout_width="225dp"
         android:layout_height="155dp"
         android:scaleType="fitXY"
+        android:background="@android:color/transparent"
         android:src="@drawable/ic_upper_0"/>
 
     <ImageView
@@ -23,6 +24,7 @@
         android:layout_width="225dp"
         android:layout_height="155dp"
         android:scaleType="fitXY"
+        android:background="@android:color/transparent"
         android:layout_below="@+id/image_flip_back_upper"
         android:src="@drawable/ic_lower_0" />
 
@@ -30,15 +32,17 @@
         android:id="@+id/image_flip_front_upper"
         android:layout_width="225dp"
         android:layout_height="155dp"
+        android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_upper_0"/>
+        android:src="@drawable/ic_upper_0" />
 
     <ImageView
         android:id="@+id/image_flip_front_lower"
         android:layout_width="225dp"
         android:layout_height="155dp"
-        android:scaleType="fitXY"
         android:layout_below="@+id/image_flip_front_upper"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
         android:src="@drawable/ic_lower_0" />
 
 </RelativeLayout>
