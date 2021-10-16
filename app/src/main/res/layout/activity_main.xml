@@ -20,9 +20,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:background="#696969"
+        android:background="#000000"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintHeight_percent="0.8"
+        android:layout_marginStart="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/minutes"
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:background="@color/black"
             app:isFast="true"
             app:tintColor="@color/grey" />
 
@@ -43,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:background="@color/black"
             app:isFast="true"
             app:tintColor="@color/grey" />
     </LinearLayout>
@@ -53,6 +56,7 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:background="@color/white"
+        android:layout_marginEnd="70dp"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintHeight_percent="0.8"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,12 +69,14 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_weight="1"
+            android:background="@color/black"
             app:isFast="true"
             app:tintColor="@color/grey"/>
         <com.fabian.timer.flip.FlipDigit
             android:id="@+id/minutes_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/black"
             android:gravity="center"
             android:layout_weight="1"
             app:isFast="true"
